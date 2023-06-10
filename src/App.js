@@ -4,7 +4,6 @@ import {  Input } from "@mui/material";
 import FormControl from "@mui/material/FormControl";
 import AddMessage from "./component/AddMessage";
 import db from "./firebase";
-import firebase from "firebase/compat/app";
 import FlipMove from "react-flip-move";
 import facebookLogo from "./facebookLogo.png";
 import SendIcon from "@mui/icons-material/Send";
@@ -70,7 +69,7 @@ function App() {
           </FormControl>
         </form>
         <FlipMove>
-          {messages.length !=0? messages.map(({ id, message, timestamp }) => (
+          {messages.length !==0? messages.map(({ id, message, timestamp }) => (
             <AddMessage key={id} username={username} message={message} />
           )): <></>}
         </FlipMove>
