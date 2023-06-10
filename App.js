@@ -46,8 +46,8 @@ function App() {
     <>
       <div className="App">
         <img className="logostyle" src={facebookLogo} alt="facebookLogo" />
-        <h1 className="heading">Messenger App</h1>
-        <h3 className="heading">Welcome {username}</h3>
+        <h1>Messenger App</h1>
+        <h3>Welcome {username}</h3>
         <form className="app_form">
           <FormControl className="app_formControl">
            

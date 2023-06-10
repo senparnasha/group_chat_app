@@ -1,4 +1,4 @@
-import { Card, CardContent, Typography } from "@mui/material";
+import { Card, CardContent } from "@mui/material";
 import React from "react";
 import "./AddMessage.css"
 import { forwardRef } from "react";
@@ -13,9 +13,9 @@ console.log(message)
       <div className="time-design">{x}</div>
     <Card className={isUser ? 'message_userCard': 'message_guestCard'} >
           <CardContent >
-            <Typography color= {isUser ? 'white': "#4d4d4d"} variant="h5" component="h2">
+            <div color= {isUser ? 'white': "#4d4d4d"} variant="h5" component="h2">
            {!isUser && `${message.username || 'Unknown User'}:`}  {message.message}
-            </Typography>
+            </div>
           </CardContent>
         </Card>
         </div>

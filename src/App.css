@@ -19,7 +19,7 @@
   z-index: 1;
   display: flex;
   background-color: #F2F2F2;
-  width: 92%;
+  width: 85%;
   margin: 20px;
   height: 15px;
   border-radius: 30px;
@@ -36,4 +36,7 @@
 
 .app_iconButton {
   flex: 0;
+}
+.heading{
+  color: #5c5b5b;
 }
